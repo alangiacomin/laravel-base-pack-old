@@ -33,9 +33,9 @@ class LaravelBasePackServiceProvider extends ServiceProvider
             __DIR__.'/../config/basepack.php' => config_path('basepack.php'),
         ]);
 
-        $this->publishes([
-            __DIR__.'/../example/CommandEvent/app/' => app_path(),
-        ], 'basepack-example-command-event');
+        // $this->publishes([
+        //     __DIR__.'/../example/CommandEvent/app/' => app_path(),
+        // ], 'basepack-example-command-event');
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
