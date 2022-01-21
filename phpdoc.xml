@@ -7,7 +7,7 @@
 >
     <title>Laravel Base Pack</title>
     <paths>
-        <output>docs</output>
+        <output>.</output>
     </paths>
     <version number="3.0.0">
         <folder>latest</folder>
