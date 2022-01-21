@@ -5,6 +5,9 @@ namespace Alangiacomin\LaravelBasePack\Models;
 use Alangiacomin\LaravelBasePack\Events\IEvent;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Aggregate root
+ */
 abstract class Aggregate extends Model implements IAggregate
 {
     /**
