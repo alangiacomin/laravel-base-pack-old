@@ -22,6 +22,12 @@ jobs:
       with:
         ref: gh-pages
       
+    - name: Status
+      run: /usr/bin/git status
+      
+    - name: Branch
+      run: /usr/bin/git branch
+      
     - name: Merge without commit
       run: /usr/bin/git merge develop --no-commit --no-ff --allow-unrelated-histories
       
