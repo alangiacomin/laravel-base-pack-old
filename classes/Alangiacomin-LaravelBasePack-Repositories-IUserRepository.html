@@ -5,7 +5,7 @@
             <title>Laravel Base Pack</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
@@ -88,33 +88,112 @@
 </aside>
 
             <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <h2>Documentation</h2>
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/alangiacomin.html">Alangiacomin</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/alangiacomin-laravelbasepack.html">LaravelBasePack</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/alangiacomin-laravelbasepack-repositories.html">Repositories</a></li>
+    </ul>
 
-    
-    <h3 id="packages">
-    Packages
-    <a href="#packages" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
+    <article class="phpdocumentor-element -interface">
+        <h2 class="phpdocumentor-content__title">
+    IUserRepository
+            <span class="phpdocumentor-element__extends">
+            extends
+                            <a href="classes/Alangiacomin-LaravelBasePack-Repositories-IRepository.html"><abbr title="\Alangiacomin\LaravelBasePack\Repositories\IRepository">IRepository</abbr></a>                    </span>
+                <div class="phpdocumentor-element__package">
+            in
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li><a href="packages/LaravelBasePack.html">LaravelBasePack</a></li>
+                            </ul>
+        </div>
+    </h2>
 
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -package"><a href="packages/LaravelBasePack.html"><abbr title="\LaravelBasePack">LaravelBasePack</abbr></a></dt>
-    </dl>
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Repositories/IUserRepository.php"><a href="files/src-repositories-iuserrepository.html"><abbr title="src/Repositories/IUserRepository.php">IUserRepository.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5</span>
 
-<h3 id="namespaces">
-    Namespaces
-    <a href="#namespaces" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
+    </aside>
 
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -namespace"><a href="namespaces/alangiacomin.html"><abbr title="\Alangiacomin">Alangiacomin</abbr></a></dt>
-    </dl>
+        
+    <section class="phpdocumentor-description"></section>
 
 
 
 
-    
 
-    
+
+
+
+
+
+
+        
+
+        
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
+    </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
@@ -128,7 +207,7 @@
 </section>
             </div>
         </div>
-        <a href="index.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Alangiacomin-LaravelBasePack-Repositories-IUserRepository.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
