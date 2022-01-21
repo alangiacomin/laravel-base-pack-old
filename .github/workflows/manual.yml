@@ -32,8 +32,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.4.0
       with:
-        # Repository name with owner. For example, actions/checkout
-        repository: gh-pages
+        ref: gh-pages
       
     - name: Merge without commit
       run: git merge develop --no-commit --no-ff
