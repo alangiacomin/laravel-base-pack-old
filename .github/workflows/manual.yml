@@ -23,17 +23,17 @@ jobs:
         ref: gh-pages
       
     - name: Merge without commit
-      run: git merge develop --no-commit --no-ff --allow-unrelated-histories
+      run: /usr/bin/git merge develop --no-commit --no-ff --allow-unrelated-histories
       
     - name: Generate docs
       run: php .\phpDocumentor.phar
       
     - name: Abort merge
-      run: git merge --abort
+      run: /usr/bin/git merge --abort
       
     - name: Add all files
-      run: git add .
+      run: /usr/bin/git add .
       
     - name: Commit
-      run: git commit -m "docs"
+      run: /usr/bin/git commit -m "docs"
       
