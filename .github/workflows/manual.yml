@@ -39,7 +39,7 @@ jobs:
       run: ls
       
     - name: Generate docs
-      run: php .\phpDocumentor.phar
+      run: php phpDocumentor.phar
       
     - name: Abort merge
       run: /usr/bin/git merge --abort
