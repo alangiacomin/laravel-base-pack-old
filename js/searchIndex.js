@@ -488,7 +488,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Alangiacomin\\LaravelBasePack\\Models\\Aggregate",
             "name": "Aggregate",
-            "summary": "",
+            "summary": "Aggregate\u0020root",
             "url": "classes/Alangiacomin-LaravelBasePack-Models-Aggregate.html"
         },                {
             "fqsen": "\\Alangiacomin\\LaravelBasePack\\Models\\Aggregate\u003A\u003Araise\u0028\u0029",
