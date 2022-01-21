@@ -50,3 +50,6 @@ jobs:
     - name: Commit
       run: /usr/bin/git commit -m "docs"
       
+    - name: Push
+      run: /usr/bin/git push
+      
