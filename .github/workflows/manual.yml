@@ -20,6 +20,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.4.0
       with:
+        ref: develop
+      
+    - name: Checkout
+      uses: actions/checkout@v2.4.0
+      with:
         ref: gh-pages
       
     - name: Status
