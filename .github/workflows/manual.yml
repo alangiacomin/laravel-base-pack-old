@@ -26,13 +26,11 @@ jobs:
         ref: gh-pages
         fetch-depth: 0
       
-    - name: Status
-      run: |
-        /usr/bin/git status
-        /usr/bin/git branch
+    - name: Branch
+      run: /usr/bin/git branch
       
     - name: Merge without commit
-      run: /usr/bin/git merge develop --no-commit --no-ff --allow-unrelated-histories
+      run: /usr/bin/git merge origin/develop --no-commit --no-ff --allow-unrelated-histories
       
     - name: Generate docs
       run: php .\phpDocumentor.phar
