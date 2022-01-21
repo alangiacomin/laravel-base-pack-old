@@ -28,3 +28,13 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+      
+    - name: Checkout
+      uses: actions/checkout@v2.4.0
+      with:
+        # Repository name with owner. For example, actions/checkout
+        repository: gh-pages
+      
+    - name: Merge without commit
+      run: git merge develop --no-commit --no-ff
+      
