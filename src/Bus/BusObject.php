@@ -66,7 +66,7 @@ abstract class BusObject implements IBusObject
      */
     public function __get($name)
     {
-        throw new Exception("Property not readable");
+        throw new Exception("Property '$name' not readable.");
     }
 
     /**
@@ -84,8 +84,9 @@ abstract class BusObject implements IBusObject
      */
     final public function clone(): self
     {
-        $this->assignNewId();
-        return $this;
+        $clone = clone $this;
+        $clone->assignNewId();
+        return $clone;
     }
 
     /**
