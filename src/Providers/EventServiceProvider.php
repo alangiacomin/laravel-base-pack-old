@@ -38,11 +38,13 @@ class EventServiceProvider extends ServiceProvider
     {
         $defaultValue = [];
         $configValue = config('basepack.eventListener.directories');
-        if (is_string($configValue)) {
+        if (is_string($configValue))
+        {
             $configValue = [$configValue];
         }
 
-        if (!isset($configValue) || !is_array($configValue)) {
+        if (!isset($configValue) || !is_array($configValue))
+        {
             return $defaultValue;
         }
 

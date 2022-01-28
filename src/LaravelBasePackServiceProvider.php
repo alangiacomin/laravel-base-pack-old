@@ -5,6 +5,8 @@ namespace Alangiacomin\LaravelBasePack;
 use Alangiacomin\LaravelBasePack\Console\Commands\CreateCommand;
 use Alangiacomin\LaravelBasePack\Console\Commands\CreateEvent;
 use Alangiacomin\LaravelBasePack\Middleware\CommandResult;
+use Alangiacomin\LaravelBasePack\Services\ILogger;
+use Alangiacomin\LaravelBasePack\Services\Logger;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelBasePackServiceProvider extends ServiceProvider
@@ -20,6 +22,7 @@ class LaravelBasePackServiceProvider extends ServiceProvider
             return new LaravelBasePack();
         });
 
+        $this->app->singleton(ILogger::class, Logger::class);
     }
 
     /**

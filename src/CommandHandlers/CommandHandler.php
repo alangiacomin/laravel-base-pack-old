@@ -41,7 +41,10 @@ abstract class CommandHandler extends BusHandler implements ShouldQueue
      */
     final public function publish(IEvent $event): void
     {
-        Bus::publishEvent($event);
+        LaravelBasePackFacade::callStaticWithInjection(
+            Bus::class,
+            'publishEvent',
+            ['event' => $event]);
     }
 
     /**

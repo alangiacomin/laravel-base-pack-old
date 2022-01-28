@@ -5,6 +5,7 @@ namespace Alangiacomin\LaravelBasePack\Controllers;
 use Alangiacomin\LaravelBasePack\Bus\Bus;
 use Alangiacomin\LaravelBasePack\Commands\Command;
 use Alangiacomin\LaravelBasePack\Commands\ICommand;
+use Alangiacomin\LaravelBasePack\Facades\LaravelBasePackFacade;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -22,7 +23,10 @@ abstract class Controller extends BaseController
      */
     final public function execute(ICommand $command): mixed
     {
-        return Bus::executeCommand($command);
+        return LaravelBasePackFacade::callStaticWithInjection(
+            Bus::class,
+            'executeCommand',
+            ['command' => $command]);
     }
 
     /**
@@ -33,7 +37,10 @@ abstract class Controller extends BaseController
      */
     final public function sendCommand(ICommand $command): void
     {
-        Bus::sendCommand($command);
+        LaravelBasePackFacade::callStaticWithInjection(
+            Bus::class,
+            'sendCommand',
+            ['command' => $command]);
     }
 
 }

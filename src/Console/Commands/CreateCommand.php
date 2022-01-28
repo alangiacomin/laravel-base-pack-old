@@ -41,11 +41,14 @@ class CreateCommand extends Command
     {
         $commandName = $this->argument('name');
 
-        try {
+        try
+        {
             $this->createCommandFile($commandName);
             $this->createCommandHandlerFile($commandName);
             $this->info("Done!");
-        } catch (Throwable $th) {
+        }
+        catch (Throwable $th)
+        {
             $this->newline();
             $this->error("Failed");
             $this->newline();
@@ -57,7 +60,8 @@ class CreateCommand extends Command
     {
         $stubFile = __DIR__."\\stubs\\Command.php.stub";
         $newFile = base_path()."\\".Config::get('basepack.namespaces.commands')."\\".$name.".php";
-        if (!is_dir(dirname($newFile))) {
+        if (!is_dir(dirname($newFile)))
+        {
             mkdir(dirname($newFile), 0777, true);
         }
 
@@ -73,7 +77,8 @@ class CreateCommand extends Command
     {
         $stubFile = __DIR__."\\stubs\\CommandHandler.php.stub";
         $newFile = base_path()."\\".Config::get('basepack.namespaces.commandHandlers')."\\".$name."Handler.php";
-        if (!is_dir(dirname($newFile))) {
+        if (!is_dir(dirname($newFile)))
+        {
             mkdir(dirname($newFile), 0777, true);
         }
 

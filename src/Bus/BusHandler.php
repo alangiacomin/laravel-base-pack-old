@@ -5,6 +5,7 @@ namespace Alangiacomin\LaravelBasePack\Bus;
 use Alangiacomin\LaravelBasePack\CommandHandlers\CommandHandler;
 use Alangiacomin\LaravelBasePack\EventHandlers\EventHandler;
 use Alangiacomin\LaravelBasePack\Facades\LaravelBasePackFacade;
+use Alangiacomin\LaravelBasePack\Services\ILogger;
 use Exception;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
@@ -59,11 +60,13 @@ abstract class BusHandler implements ShouldQueue
                 {
                     break;
                 }
+
                 $this->handleObjectExecution();
                 $this->isActive = false;
-            } catch (Throwable $ex)
+            }
+            catch (Throwable $ex)
             {
-                $this->failed($ex);
+                LaravelBasePackFacade::callWithInjection($this, 'failed', ['ex' => $ex]);
 
                 // if sync, re-throws exception
                 if (!$this->isJob() || $this->job->getQueue() == 'sync')
@@ -80,17 +83,18 @@ abstract class BusHandler implements ShouldQueue
     /**
      * Entry point of object handling execution
      *
+     * @param  ILogger  $logger
      * @return void
      * @throws Exception
      */
-    private function handleObjectExecution(): void
+    final public function handleObjectExecution(): void
     {
-        Bus::logNew($this->busObject);
         $this->setTypedObject();
 
         LaravelBasePackFacade::callWithInjection($this, 'execute');
 
-        Bus::logDone($this->busObject);
+        $logger = LaravelBasePackFacade::injectedInstance(ILogger::class);
+        $logger->received($this->busObject);
     }
 
     /**
@@ -133,13 +137,14 @@ abstract class BusHandler implements ShouldQueue
      * Must be public because can be called from outside scope (by Laravel)
      *
      * @param  Throwable  $ex
+     * @param  ILogger  $logger
      * @return void
      */
-    final public function failed(Throwable $ex): void
+    final public function failed(Throwable $ex, ILogger $logger): void
     {
         $this->fail($ex);
         $this->isActive = false;
-        Bus::logFailed($this->busObject, $ex);
+        $logger->exception($this->busObject, $ex);
     }
 
     /**

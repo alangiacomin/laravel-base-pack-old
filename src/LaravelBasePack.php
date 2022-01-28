@@ -2,15 +2,28 @@
 
 namespace Alangiacomin\LaravelBasePack;
 
+use Alangiacomin\LaravelBasePack\Services\ILogger;
 use Exception;
 use Illuminate\Support\Facades\App;
 
 class LaravelBasePack
 {
-    public function callWithInjection(object $obj, string $method, ...$params)
+    public function callWithInjection(object $obj, string $method, array $params = [])
     {
         /** @noinspection PhpUndefinedMethodInspection */
         return App::call([$obj, $method], $params);
+    }
+
+    public function callStaticWithInjection(string $class, string $method, array $params = [])
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        return App::call($class.'@'.$method, $params);
+    }
+
+    public function injectedInstance(string $object)
+    {
+        /** @noinspection PhpUndefinedMethodInspection */
+        return App::make($object);
     }
 
     /**
@@ -33,5 +46,13 @@ class LaravelBasePack
         {
             throw new Exception("Object check failed.");
         }
+    }
+
+    /**
+     * @return ILogger
+     */
+    public function logger(): ILogger
+    {
+        return $this->injectedInstance(ILogger::class);
     }
 }

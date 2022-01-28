@@ -45,6 +45,14 @@ return [
             'interface' => IUserRepository::class,
             'bindingType' => BindingType::Singleton,
         ],
-    ]
+    ],
+
+    /**
+     * Log configuration
+     */
+    'log' => [
+        // Table prefix
+        'table_prefix' => '',
+    ],
 
 ];

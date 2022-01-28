@@ -25,9 +25,10 @@ abstract class AggregateCommandHandler extends CommandHandler
         {
             throw new Exception("'aggregate' property must be defined");
         }
+
         $this->aggregate = $this->readAggregate();
 
-        DB::transaction(function(){
+        DB::transaction(function () {
             LaravelBasePackFacade::callWithInjection($this, 'apply');
             foreach ($this->aggregate->events as $event)
             {
@@ -46,7 +47,7 @@ abstract class AggregateCommandHandler extends CommandHandler
         $rp = new ReflectionProperty(static::class, 'aggregate');
         $class = $rp->getType()->getName();
         $agg = call_user_func([$class, 'find'], $this->command->aggregateId);
-        if(!isset($agg))
+        if (!isset($agg))
         {
             throw new Exception("Aggregate not found");
         }
