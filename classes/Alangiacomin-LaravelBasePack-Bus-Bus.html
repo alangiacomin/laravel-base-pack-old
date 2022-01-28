@@ -112,7 +112,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
@@ -152,13 +152,6 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>Log failed bus object execution</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-Bus-Bus.html#method_logNew">logNew()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Log new bus object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Alangiacomin-LaravelBasePack-Bus-Bus.html#method_publishEvent">publishEvent()</a>
@@ -207,7 +200,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -215,7 +208,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">executeCommand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Commands-ICommand.html"><abbr title="\Alangiacomin\LaravelBasePack\Commands\ICommand">ICommand</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$command</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">executeCommand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Commands-ICommand.html"><abbr title="\Alangiacomin\LaravelBasePack\Commands\ICommand">ICommand</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$command</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -223,6 +216,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$command</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Commands-ICommand.html"><abbr title="\Alangiacomin\LaravelBasePack\Commands\ICommand">ICommand</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logger</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -250,7 +250,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -293,7 +293,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -336,49 +336,6 @@
             -public
                                     -static            -final        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_logNew">
-        logNew()
-        <a href="classes/Alangiacomin-LaravelBasePack-Bus-Bus.html#method_logNew" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">66</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Log new bus object</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">logNew</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$object</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static            -final        "
->
     <h4 class="phpdocumentor-element__name" id="method_publishEvent">
         publishEvent()
         <a href="classes/Alangiacomin-LaravelBasePack-Bus-Bus.html#method_publishEvent" class="headerlink"><i class="fas fa-link"></i></a>
@@ -386,7 +343,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -394,7 +351,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">publishEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Events-IEvent.html"><abbr title="\Alangiacomin\LaravelBasePack\Events\IEvent">IEvent</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">publishEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Events-IEvent.html"><abbr title="\Alangiacomin\LaravelBasePack\Events\IEvent">IEvent</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -402,6 +359,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$event</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Events-IEvent.html"><abbr title="\Alangiacomin\LaravelBasePack\Events\IEvent">IEvent</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logger</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -429,7 +393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -437,7 +401,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">raiseEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Events-IEvent.html"><abbr title="\Alangiacomin\LaravelBasePack\Events\IEvent">IEvent</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">raiseEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Events-IEvent.html"><abbr title="\Alangiacomin\LaravelBasePack\Events\IEvent">IEvent</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -445,6 +409,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$event</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Events-IEvent.html"><abbr title="\Alangiacomin\LaravelBasePack\Events\IEvent">IEvent</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logger</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -472,7 +443,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/Bus.php"><a href="files/src-bus-bus.html"><abbr title="src/Bus/Bus.php">Bus.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -480,7 +451,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">sendCommand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Commands-ICommand.html"><abbr title="\Alangiacomin\LaravelBasePack\Commands\ICommand">ICommand</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$command</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+        <span class="phpdocumentor-signature__final">final</span>    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">sendCommand</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Commands-ICommand.html"><abbr title="\Alangiacomin\LaravelBasePack\Commands\ICommand">ICommand</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$command</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -488,6 +459,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$command</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Commands-ICommand.html"><abbr title="\Alangiacomin\LaravelBasePack\Commands\ICommand">ICommand</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logger</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 

@@ -26,11 +26,6 @@ Search.appendIndex(
             "summary": "Send\u0020event\u0020which\u0020will\u0020be\u0020handled\u0020synchronously",
             "url": "classes/Alangiacomin-LaravelBasePack-Bus-Bus.html#method_raiseEvent"
         },                {
-            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Bus\\Bus\u003A\u003AlogNew\u0028\u0029",
-            "name": "logNew",
-            "summary": "Log\u0020new\u0020bus\u0020object",
-            "url": "classes/Alangiacomin-LaravelBasePack-Bus-Bus.html#method_logNew"
-        },                {
             "fqsen": "\\Alangiacomin\\LaravelBasePack\\Bus\\Bus\u003A\u003AlogDone\u0028\u0029",
             "name": "logDone",
             "summary": "Log\u0020executed\u0020bus\u0020object",
@@ -376,6 +371,71 @@ Search.appendIndex(
             "summary": "",
             "url": ""
         },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\BusObjectDirection",
+            "name": "BusObjectDirection",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Core-Enums-BusObjectDirection.html"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\BusObjectDirection\u003A\u003ASent",
+            "name": "Sent",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\BusObjectDirection\u003A\u003AExecuted",
+            "name": "Executed",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\BusObjectDirection\u003A\u003AReceived",
+            "name": "Received",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType",
+            "name": "LogType",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Core-Enums-LogType.html"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003ACommandSent",
+            "name": "CommandSent",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003ACommandReceived",
+            "name": "CommandReceived",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003AEventSent",
+            "name": "EventSent",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003AEventReceived",
+            "name": "EventReceived",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003AInfo",
+            "name": "Info",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003AWarning",
+            "name": "Warning",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003AError",
+            "name": "Error",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Core\\Enums\\LogType\u003A\u003AException",
+            "name": "Exception",
+            "summary": "",
+            "url": ""
+        },                {
             "fqsen": "\\Alangiacomin\\LaravelBasePack\\EventHandlers\\EventHandler",
             "name": "EventHandler",
             "summary": "",
@@ -431,6 +491,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_callWithInjection"
         },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\LaravelBasePack\u003A\u003AcallStaticWithInjection\u0028\u0029",
+            "name": "callStaticWithInjection",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_callStaticWithInjection"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\LaravelBasePack\u003A\u003AinjectedInstance\u0028\u0029",
+            "name": "injectedInstance",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_injectedInstance"
+        },                {
             "fqsen": "\\Alangiacomin\\LaravelBasePack\\LaravelBasePack\u003A\u003AcheckObjectType\u0028\u0029",
             "name": "checkObjectType",
             "summary": "",
@@ -440,6 +510,11 @@ Search.appendIndex(
             "name": "checkObject",
             "summary": "",
             "url": "classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_checkObject"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\LaravelBasePack\u003A\u003Alogger\u0028\u0029",
+            "name": "logger",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_logger"
         },                {
             "fqsen": "\\Alangiacomin\\LaravelBasePack\\LaravelBasePackServiceProvider",
             "name": "LaravelBasePackServiceProvider",
@@ -571,6 +646,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Alangiacomin-LaravelBasePack-Repositories-UserRepository.html#method_userDirectPermissions"
         },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\ILogger",
+            "name": "ILogger",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\ILogger\u003A\u003Asent\u0028\u0029",
+            "name": "sent",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-ILogger.html#method_sent"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\ILogger\u003A\u003Areceived\u0028\u0029",
+            "name": "received",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-ILogger.html#method_received"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger",
+            "name": "Logger",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method___construct"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003Asent\u0028\u0029",
+            "name": "sent",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_sent"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003Areceived\u0028\u0029",
+            "name": "received",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_received"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003Aexception\u0028\u0029",
+            "name": "exception",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_exception"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003AlogObject\u0028\u0029",
+            "name": "logObject",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_logObject"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003AbusObjectType\u0028\u0029",
+            "name": "busObjectType",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_busObjectType"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services\\Logger\u003A\u003A\u0024table_name",
+            "name": "table_name",
+            "summary": "",
+            "url": "classes/Alangiacomin-LaravelBasePack-Services-Logger.html#property_table_name"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -660,5 +790,10 @@ Search.appendIndex(
             "name": "Repositories",
             "summary": "",
             "url": "namespaces/alangiacomin-laravelbasepack-repositories.html"
+        },                {
+            "fqsen": "\\Alangiacomin\\LaravelBasePack\\Services",
+            "name": "Services",
+            "summary": "",
+            "url": "namespaces/alangiacomin-laravelbasepack-services.html"
         }            ]
 );

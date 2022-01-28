@@ -196,6 +196,13 @@ Must be public because can be called from outside scope (by Laravel)</dd>
 <dd>Handle the {@see Event}</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Alangiacomin-LaravelBasePack-Bus-BusHandler.html#method_handleObjectExecution">handleObjectExecution()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Entry point of object handling execution</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Alangiacomin-LaravelBasePack-EventHandlers-EventHandler.html#method_sendCommand">sendCommand()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -236,13 +243,6 @@ Must be public because can be called from outside scope (by Laravel)</dd>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Manage the failed handling.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Alangiacomin-LaravelBasePack-Bus-BusHandler.html#method_handleObjectExecution">handleObjectExecution()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Entry point of object handling execution</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Alangiacomin-LaravelBasePack-Bus-BusHandler.html#method_setTypedObject">setTypedObject()</a>
@@ -312,7 +312,7 @@ Must be public because can be called from outside scope (by Laravel)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -345,7 +345,7 @@ Must be public because can be called from outside scope (by Laravel)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -378,7 +378,7 @@ Must be public because can be called from outside scope (by Laravel)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -415,7 +415,7 @@ Must be public because can be called from outside scope (by Laravel)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -424,7 +424,7 @@ Must be public because can be called from outside scope (by Laravel)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__final">final</span>        <span class="phpdocumentor-signature__name">failed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+        <span class="phpdocumentor-signature__final">final</span>        <span class="phpdocumentor-signature__name">failed</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ex</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logger</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -432,6 +432,13 @@ Must be public because can be called from outside scope (by Laravel)</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$ex</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logger</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -492,6 +499,53 @@ Must be public because can be called from outside scope (by Laravel)</p>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\Throwable">Throwable</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                -final        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handleObjectExecution">
+        handleObjectExecution()
+        <a href="classes/Alangiacomin-LaravelBasePack-Bus-BusHandler.html#method_handleObjectExecution" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Entry point of object handling execution</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__final">final</span>        <span class="phpdocumentor-signature__name">handleObjectExecution</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -602,7 +656,7 @@ Must be public because can be called from outside scope (by Laravel)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -635,7 +689,7 @@ Must be public because can be called from outside scope (by Laravel)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -692,7 +746,7 @@ Must be public because can be called from outside scope (by Laravel)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -725,7 +779,7 @@ Must be public because can be called from outside scope (by Laravel)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -785,53 +839,6 @@ Must be public because can be called from outside scope (by Laravel)</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_handleObjectExecution">
-        handleObjectExecution()
-        <a href="classes/Alangiacomin-LaravelBasePack-Bus-BusHandler.html#method_handleObjectExecution" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">86</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Entry point of object handling execution</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">handleObjectExecution</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_setTypedObject">
         setTypedObject()
         <a href="classes/Alangiacomin-LaravelBasePack-Bus-BusHandler.html#method_setTypedObject" class="headerlink"><i class="fas fa-link"></i></a>
@@ -839,7 +846,7 @@ Must be public because can be called from outside scope (by Laravel)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Bus/BusHandler.php"><a href="files/src-bus-bushandler.html"><abbr title="src/Bus/BusHandler.php">BusHandler.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 

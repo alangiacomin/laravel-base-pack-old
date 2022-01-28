@@ -91,11 +91,12 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/alangiacomin.html">Alangiacomin</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/alangiacomin-laravelbasepack.html">LaravelBasePack</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/alangiacomin-laravelbasepack-services.html">Services</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    LaravelBasePack
+    Logger
 
     
             <div class="phpdocumentor-element__package">
@@ -105,13 +106,16 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>                    </span>
     
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
     </aside>
 
@@ -123,6 +127,18 @@
 
 
 
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes, Traits and Enums
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></dt>
+        <dd></dd>
+    
+    
+    
+    </dl>
 
 
 <h3 id="toc">
@@ -131,45 +147,52 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_callStaticWithInjection">callStaticWithInjection()</a>
+                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#property_table_name">$table_name</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+<dd>Constructor</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_exception">exception()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_callWithInjection">callWithInjection()</a>
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_received">received()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_checkObject">checkObject()</a>
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_sent">sent()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_checkObjectType">checkObjectType()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_busObjectType">busObjectType()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_injectedInstance">injectedInstance()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_logObject">logObject()</a>
     <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_logger">logger()</a>
-    <span>
-                                &nbsp;: <a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a>    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -180,11 +203,51 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_table_name">
+        $table_name
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#property_table_name" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$table_name</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"><p>Table name</p>
+</section>
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -192,52 +255,25 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_callStaticWithInjection">
-        callStaticWithInjection()
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_callStaticWithInjection" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Constructor</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">callStaticWithInjection</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$class</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$params</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
+    
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -252,100 +288,80 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_callWithInjection">
-        callWithInjection()
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_callWithInjection" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_exception">
+        exception()
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_exception" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">callWithInjection</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$obj</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">exception</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$obj</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$obj</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ex</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Throwable">Throwable</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
 
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_received">
+        received()
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_received" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">received</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$obj</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$obj</span>
-                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$params</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_checkObject">
-        checkObject()
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_checkObject" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">checkObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$object</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -366,7 +382,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -377,40 +393,31 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_checkObjectType">
-        checkObjectType()
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_checkObjectType" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_sent">
+        sent()
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_sent" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">checkObjectType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">sent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$obj</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$object</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                <span class="phpdocumentor-signature__argument__name">$obj</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -431,7 +438,7 @@
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -439,43 +446,41 @@
                     <article
         class="phpdocumentor-element
             -method
-            -public
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_injectedInstance">
-        injectedInstance()
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_injectedInstance" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_busObjectType">
+        busObjectType()
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_busObjectType" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">injectedInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">busObjectType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$obj</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$object</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$obj</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -483,31 +488,55 @@
                     <article
         class="phpdocumentor-element
             -method
-            -public
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_logger">
-        logger()
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#method_logger" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_logObject">
+        logObject()
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#method_logObject" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/LaravelBasePack.php"><a href="files/src-laravelbasepack.html"><abbr title="src/LaravelBasePack.php">LaravelBasePack.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Services/Logger.php"><a href="files/src-services-logger.html"><abbr title="src/Services/Logger.php">Logger.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">logger</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span></code>
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">logObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Core-Enums-LogType.html"><abbr title="\Alangiacomin\LaravelBasePack\Core\Enums\LogType">LogType</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$obj</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logType</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Core-Enums-LogType.html"><abbr title="\Alangiacomin\LaravelBasePack\Core\Enums\LogType">LogType</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$obj</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Alangiacomin-LaravelBasePack-Bus-IBusObject.html"><abbr title="\Alangiacomin\LaravelBasePack\Bus\IBusObject">IBusObject</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$message</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/Alangiacomin-LaravelBasePack-Services-ILogger.html"><abbr title="\Alangiacomin\LaravelBasePack\Services\ILogger">ILogger</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -590,7 +619,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/Alangiacomin-LaravelBasePack-LaravelBasePack.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Alangiacomin-LaravelBasePack-Services-Logger.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
