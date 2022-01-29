@@ -35,13 +35,8 @@ jobs:
     - name: Dummy command
       run: ls .
 
-    - name: Run test
-      uses: php-actions/composer@v6
-      with:
-        command: composer run test
-
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: composer run test -- ./
+      run: ./vendor/bin/pest --no-coverage
