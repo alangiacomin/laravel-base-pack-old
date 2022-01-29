@@ -32,6 +32,9 @@ jobs:
       with:
         php-version: 8.1
 
+    - name: Dummy command
+      run: ls .
+
     - name: Run test
       uses: php-actions/composer@v6
       with:
