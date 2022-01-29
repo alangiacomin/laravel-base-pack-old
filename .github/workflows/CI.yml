@@ -39,4 +39,4 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: ./vendor/bin/pest --no-coverage
+      run: ./vendor/pestphp/pest/bin/pest --no-coverage
