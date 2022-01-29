@@ -30,5 +30,23 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
+      if: always()
       run: composer run test
       #run: ./vendor/pestphp/pest/bin/pest --no-coverage
+
+    - name: Run test suite
+      if: always()
+      run: composer run test .
+      #run: ./vendor/pestphp/pest/bin/pest --no-coverage
+
+    - name: Run test suite
+      if: always()
+      run: composer run test -- .
+
+    - name: Run test suite
+      if: always()
+      run: composer run test -- ./
+
+    - name: Run test suite
+      if: always()
+      run: composer run test ./
