@@ -30,4 +30,5 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: ./vendor/pestphp/pest/bin/pest --no-coverage
+      run: composer run test
+      #run: ./vendor/pestphp/pest/bin/pest --no-coverage
