@@ -7,10 +7,13 @@ use ReflectionMethod;
 
 class BusObjectTestable extends BusObject
 {
+    /**
+     * @throws \ReflectionException
+     */
     public function assignNewId(): void
     {
         $method = new ReflectionMethod(BusObject::class, 'assignNewId');
         $method->setAccessible(true);
-        echo $method->invoke($this);
+        $method->invoke($this);
     }
 }

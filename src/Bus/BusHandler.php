@@ -83,7 +83,6 @@ abstract class BusHandler implements ShouldQueue
     /**
      * Entry point of object handling execution
      *
-     * @param  ILogger  $logger
      * @return void
      * @throws Exception
      */
