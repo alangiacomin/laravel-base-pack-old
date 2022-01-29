@@ -35,7 +35,7 @@ jobs:
     - name: Run test
       uses: php-actions/composer@v6
       with:
-        command: run-script test
+        command: compser run test
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
