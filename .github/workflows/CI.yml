@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-version: [8.x]
+        php-version: [8.0.x, 8.1.x]
 
     steps:
       - name: Use PHP ${{ matrix.php-version }}
